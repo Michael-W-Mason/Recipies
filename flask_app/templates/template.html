@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Flask Template</title>
+</head>
+<body>
+    <!-- Check to make sure CSS is linked -->
+    <h1>If I'm not purple then the CSS script isn't linked</h1>
+    <!-- Make sure post works -->
+    <form action="/sample_post" method="post">
+        <!-- the name part of the input becomes the key in our request.form -->
+        <input type="text" name="sample_text">
+        <!-- Every Form needs some form of type with submit -->
+        <button type="submit">submit</button>
+    </form>
+    <!-- Check to make sure image is linked -->
+    <img src= "{{ url_for('static', filename='img/hello_world.jpg') }}" alt="Hello World">
+    <!-- Check to make sure script is linked -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
