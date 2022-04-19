@@ -1,11 +1,20 @@
-/* Default Value to make sure script is linked */
-h1{
-    color: rebeccapurple;
-}
-
 /* CSS Reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.main-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }

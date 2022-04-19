@@ -4,7 +4,7 @@
 from flask_app import app
 
 # Imports our routing to the app
-from flask_app.controllers import templates
+from flask_app.controllers import users
 
 # Make sure we run this script not as a module
 if __name__ == "__main__":

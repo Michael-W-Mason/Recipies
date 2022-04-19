@@ -1,7 +1,7 @@
 -- This file is for testing our queries before using them in python
 
 -- Makes query easier without having to specify schema for every table
-USE schema_name;
+USE recipe_schema;
 
 
 -- Base methods for CRUD
@@ -23,3 +23,7 @@ USE schema_name;
 -- SELECT * FROM table_1 JOIN middle_table ON table_1.id = middle_table.foreign_id_1 JOIN table_2 ON table_2.id = middle_table.foreign_id_2
 
 -- Your Query Here
+-- DELETE FROM users;
+-- DELETE FROM recipes;
+-- SELECT * FROM users WHERE email='mwmason1998@gmail.com';
+-- SELECT * from recipes;
